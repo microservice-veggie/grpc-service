@@ -2,7 +2,7 @@
 
 syntax = "proto3";
 
-option go_package = "github.com/koyeb/example-go-grpc-gateway/protogen/golang/orders";
+option go_package = "github.com/microservice-veggie/grpc-service/protogen/golang/orders";
 
 import "product/product.proto";
 import "google/api/date.proto";
