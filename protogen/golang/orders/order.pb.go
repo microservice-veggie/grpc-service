@@ -9,7 +9,7 @@
 package orders
 
 import (
-	product "github.com/koyeb/example-go-grpc-gateway/protogen/golang/product"
+	product "github.com/microservice-veggie/grpc-service/protogen/golang/product"
 	date "google.golang.org/genproto/googleapis/type/date"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
