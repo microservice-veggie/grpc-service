@@ -2,9 +2,9 @@
 // versions:
 // - protoc-gen-go-grpc v1.5.1
 // - protoc             v5.29.0
-// source: database/get_account.proto
+// source: database/getAccount.proto
 
-package get_account
+package getAccount
 
 import (
 	context "context"
@@ -117,5 +117,5 @@ var GetAccountAPI_ServiceDesc = grpc.ServiceDesc{
 		},
 	},
 	Streams:  []grpc.StreamDesc{},
-	Metadata: "database/get_account.proto",
+	Metadata: "database/getAccount.proto",
 }

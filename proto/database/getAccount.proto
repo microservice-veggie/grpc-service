@@ -1,5 +1,5 @@
 syntax = "proto3";
-option go_package ="github.com/microservice-veggie/grpc-service/protogen/golang/database/get_account";
+option go_package ="github.com/microservice-veggie/grpc-service/protogen/golang/database/getAccount";
 
 message GetAccountReq {
     string account_name=1;
