@@ -13,6 +13,8 @@ RUN go mod download
 
 # Copy the source from the current directory to the Working Directory inside the container
 COPY . .
+# Copy the .env file to the Working Directory inside the container
+COPY .env .env
 
 # Build the Go app for Linux
 RUN GOOS=linux GOARCH=amd64 go build -o main .
@@ -27,6 +29,7 @@ WORKDIR /root/
 
 # Copy the Pre-built binary file from the previous stage
 COPY --from=builder /grpc-service/main /root
+COPY --from=builder /grpc-service/.env /root/
 EXPOSE 8080
 # Command to run the executable
 ENTRYPOINT ["/root/main"]
