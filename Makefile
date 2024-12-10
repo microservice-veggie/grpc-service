@@ -10,7 +10,7 @@ gen-proto-gateway:
 	--grpc-gateway_out ../protogen/golang --grpc-gateway_opt paths=source_relative \
     --grpc-gateway_opt generate_unbound_methods=true \
 	./**/*.proto
-run-server:
+start:
 	go run main.go
 run-proxy:
 	go run proxy/proxy.go

@@ -20,9 +20,9 @@ COPY .env .env
 RUN GOOS=linux GOARCH=amd64 go build -o main .
 
 # Start a new stage from scratch
-FROM alpine:latest  
+FROM debian:stable-slim
 
-RUN apk --no-cache add ca-certificates
+RUN apt-get update && apt-get install -y ca-certificates && rm -rf /var/lib/apt/lists/*
 
 # Set the Current Working Directory inside the container
 WORKDIR /root/
