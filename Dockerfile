@@ -30,6 +30,6 @@ WORKDIR /root/
 # Copy the Pre-built binary file from the previous stage
 COPY --from=builder /grpc-service/main /root
 COPY --from=builder /grpc-service/.env /root/
-EXPOSE 8080
+EXPOSE 8081
 # Command to run the executable
 ENTRYPOINT ["/root/main"]
